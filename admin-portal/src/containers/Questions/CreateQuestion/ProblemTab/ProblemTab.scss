@@ -1,0 +1,85 @@
+.form {
+	.role-select {
+		width: 250px;
+	}
+	.exp-select {
+		width: 160px;
+	}
+	.difficulty-select {
+		width: 160px;
+	}
+	.duration-select {
+		width: 100px;
+	}
+	.p-title {
+		width: 100%;
+	}
+	.p-statement {
+		width: 100%;
+
+		.label-div {
+			display: inline;
+			padding-right: 4px;
+			.label-subdiv {
+				display: inline-flex;
+				width: calc(100% - 10px);
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+
+		:global {
+			.ant-form-item-required::after {
+				content:"";
+			}
+			.ant-form-item-control-wrapper {
+				padding-top: 4px;
+			}
+			.ant-input {
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.p-tags {
+		width: 100%;
+	}
+	.form-buttons {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		padding-top: 20px;
+	}
+}
+
+.form__button {
+	float: right;
+	margin-left: 10px;
+}
+
+.form__forgot {
+	float: right;
+}
+
+.ptab {
+	width: 100%;
+	padding: 20px;
+	:global {
+		.ant-form-inline .ant-form-item > .ant-form-item-label {
+			display: block;
+		}
+		.ant-form-item-label {
+			text-align: left;
+		}
+	}
+}
+
+.markdown-box {
+	padding: 4px 11px;
+	width: 100%;
+	max-width: 100%;
+	line-height: 20px;
+	word-wrap: break-word;
+	overflow-y: auto;
+}

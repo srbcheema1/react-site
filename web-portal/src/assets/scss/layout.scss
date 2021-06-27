@@ -1,0 +1,103 @@
+@import "./master";
+
+$breakpoint-sm: $mob-min-width;
+$breakpoint-md: $tab-min-width;
+$breakpoint-lg: $desk-min-width;
+// $breakpoint-xl: 1260px;
+
+$vr-border-style: 1px solid #ccc;
+$gutter-size: $col-gutter-size;
+
+/* Function to encode number,
+ * in case the class name starts with a number
+*/
+// @function encodeNumber($number) {
+//   $numberString: inspect($number); //inspect converts it to a string
+//   @if str-length($numberString) == 1 {
+//     @return \3#{$number}#{unquote(" ")}; //we need to add a space at the end
+//   } @else {
+//     $firstDigit: unquote(str-slice($numberString, 1, 1));
+//     $otherDigits: unquote(str-slice($numberString, 2));
+//     @return \3#{$firstDigit} #{$otherDigits};
+//   }
+// }
+
+@function getMediaQuery($size) {
+  @if $size == sm {
+    @return unquote("only screen and (min-width: " + $breakpoint-sm + ")");
+  } @else if $size == md {
+    @return unquote("only screen and (min-width: " + $breakpoint-md + ")");
+  } @else if $size == lg {
+    @return unquote("only screen and (min-width: " + $breakpoint-lg + ")");
+  } @else if $size == xl {
+    @return unquote("only screen and (min-width: " + $breakpoint-xl + ")");
+  }
+}
+
+@mixin build-grid() {
+  $breakpointsList: "sm", "md", "lg";
+  // , "xl";
+  // $columnsList: 2, 3, 4, 5, 6, 8, 10, 12;
+  $columnsList: 2, 3, 12;
+  //REMINDER: These row may break over to new lines, in case the columns can't be fitted in a single line.
+  // containers (rows)
+  .l-row {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: (-$gutter-size);
+    margin-right: (-$gutter-size);
+
+    //grid cells (columns)
+    & .l-col {
+      box-sizing: border-box;
+      // flex: none; //we have to use this instead of "flex:1" because of an IE10/IE11 box-sizing discrepancy :(
+      padding-left: $gutter-size;
+      padding-right: $gutter-size;
+    }
+  }
+
+  @each $totalColumns in $columnsList {
+    @for $column from 1 through $totalColumns {
+      .l-col-#{$column}\/#{$totalColumns} {
+        width: percentage($column/$totalColumns);
+      }
+      .l-col-offset-#{$column}\/#{$totalColumns} {
+        margin-left: percentage($column/$totalColumns);
+      }
+    }
+  }
+  .l-vr-left {
+    border-left: $vr-border-style;
+  }
+  .l-vr-right {
+    border-right: $vr-border-style;
+  }
+  .l-spacing-bottom {
+    margin-bottom: ($gutter-size * 1.5);
+  }
+  @each $breakpoint in $breakpointsList {
+    @media #{getMediaQuery($breakpoint)} {
+      @each $totalColumns in $columnsList {
+        @for $column from 1 through $totalColumns {
+          .l-col-#{$column}\/#{$totalColumns}\@#{$breakpoint} {
+            width: percentage($column/$totalColumns);
+          }
+          .l-col-offset-#{$column}\/#{$totalColumns}\@#{$breakpoint} {
+            margin-left: percentage($column/$totalColumns);
+          }
+        }
+      }
+      .l-vr-left\@#{$breakpoint} {
+        border-left: $vr-border-style;
+      }
+      .l-vr-right\@#{$breakpoint} {
+        border-right: $vr-border-style;
+      }
+      .l-spacing-bottom\@#{$breakpoint} {
+        margin-bottom: ($gutter-size * 1.5);
+      }
+    }
+  }
+}

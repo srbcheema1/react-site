@@ -1,0 +1,48 @@
+.l-header {
+	display: flex;
+	padding: 5px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.l-header__left {
+	flex: 0 0 auto;
+	padding: 0 10px;
+}
+
+.l-header__center {
+	flex: 1 1 auto;
+}
+
+.l-header__right {
+	flex: 0 0 auto;
+	:global {
+		.ant-menu {
+			background: inherit;
+		}
+		.ant-menu-horizontal {
+			border-bottom: none;
+		}
+		.ant-menu-item {
+			padding: 0 10px;
+		}
+	}
+}
+
+.l-header__icon {
+	padding-right: 0px;
+}
+
+.l-header__usericon {
+	margin-right: 5px;
+}
+
+.l-header__user {
+	padding-right: 10px;
+}
+
+.circle-icon {
+	background: #00000040;
+	padding: 4px;
+	border-radius: 50%;
+}

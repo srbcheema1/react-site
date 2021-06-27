@@ -1,0 +1,12 @@
+$background-color: rgba(237, 248, 255, .5);
+
+.backdrop {
+  background-color: $background-color;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+}

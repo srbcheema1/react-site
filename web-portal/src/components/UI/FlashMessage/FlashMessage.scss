@@ -1,0 +1,24 @@
+@import "../../../assets/scss/_master";
+
+:global {
+  .flash-message__container {
+    display: flex;
+    font-size: $desktop-content-normal-font-size;
+    background-color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+  }
+
+  .flash-message__icon {
+    max-width: 25px;
+    max-height: 25px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+  .flash-message__message {
+    max-height: 100%;
+    align-self: center;
+    justify-self: center;
+    vertical-align: center;
+  }
+}

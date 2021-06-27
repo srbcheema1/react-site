@@ -1,0 +1,80 @@
+.c-problem-selector {
+	padding: 10px 0px;
+}
+
+.c-problem-selector__points {
+
+}
+
+.c-problem-selector__plist {
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding-top: 20px;
+}
+
+.c-problem-selector__list-item {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.c-problem-selector__marker-div {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.c-problem-selector__marker {
+	width: 10px;
+	height:40px;
+}
+.c-problem-selector__marker[ck_selected="true"] {
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 10px solid #24B9E8;
+}
+.c-problem-selector__marker-box {
+	width: 5px;
+	height: 40px;
+}
+.c-problem-selector__marker-box[ck_selected="true"] {
+	background-color: #24B9E8;
+}
+.c-problem-selector__balancer {
+	width: 7px;
+	height: 40px;
+}
+
+.c-problem-selector__icon {
+	width:36px;
+	height:36px;
+	border-radius: 18px;
+	border: 1px solid black;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	cursor: pointer;
+	border-color: #66A391;
+}
+
+.c-problem-selector__icon[status="ALL_PASS"] {
+	background-color: #66A391;
+	border-color: #66A391;
+	color: #fff;
+}
+
+.c-problem-selector__icon[status="SOME_PASS"] {
+	background-color: #CFC13E;
+	border-color: #CFC13E;
+	color: #fff;
+}
+
+.c-problem-selector__icon[status="ALL_FAIL"] {
+	background-color: #FC8263;
+	border-color: #FC8263;
+	color: #fff;
+}

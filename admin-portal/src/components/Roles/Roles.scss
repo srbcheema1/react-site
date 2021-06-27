@@ -1,0 +1,17 @@
+$create-role-div-color: #fafafa;
+
+.table-roles {
+  margin: 10px;
+}
+
+.create-role-div {
+  background: $create-role-div-color;
+  margin: 10px;
+  padding: 20px 10px 0;
+}
+
+.create-role-form {
+  display: flex;
+  justify-content: space-around;
+
+}

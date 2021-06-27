@@ -1,0 +1,58 @@
+.c-candidatetable {
+	background: #fff;
+	color: #707070;
+	:global {
+		.ant-table {
+			color:#707070;
+		}
+		.ant-table-thead > tr > th {
+			background: #fff;
+			font-weight: 800;
+		}
+	}
+}
+
+
+.l-candidatetable__title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	cursor: pointer;
+}
+
+.l-candidatetable__avatar {
+	margin-right: 10px;
+}
+
+.l-candidatetable__fullname {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+
+
+.c-candidate {
+	.c-candidatesearch {
+		padding:10px;
+		padding-left: 50px;
+		// padding-bottom: 20px;
+	}
+}
+.c-candidatesearch .c-candidatesearch__searchcandidate {
+	width:260px;
+	margin-right: 30px;
+}
+.c-candidatesearch .c-candidatesearch__status {
+	width:160px;
+	margin-right: 30px;
+}
+.c-candidatesearch .c-candidatesearch__actions {
+	width:120px;
+	margin-right: 30px;
+}
+.c-candidatesearch .c-candidatesearch__filters {
+	float:right;
+	padding-right: 20px;
+}

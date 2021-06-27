@@ -1,0 +1,317 @@
+@import "./master";
+@import "./layout";
+
+:global {
+  * {
+    box-sizing: border-box;
+  }
+  *:focus {
+    outline: none;
+  }
+  strong {
+    font-weight: $font-weight-bold;
+  }
+  em {
+    font-style: italic;
+  }
+  .error {
+    color: $error-red;
+  }
+  input {
+    border: 0px;
+    padding: 10px;
+  }
+  input[readonly]:hover {
+    cursor: not-allowed;
+  }
+  form input[type="text"],
+  form input[type="number"],
+  form input[type="password"] {
+    height: $input-height;
+  }
+  .flex {
+    display: flex;
+  }
+  .displayNone {
+    display: none;
+  }
+  html,
+  body {
+    // @include fluid-type($min-width, $max-width, $min-font, $max-font);
+    font-family: "Roboto", sans-serif !important;
+  }
+
+  // font-weight classes
+  .semi-bold {
+    font-weight: $font-weight-medium;
+  }
+  .bold {
+    font-weight: $font-weight-bold;
+  }
+  .font-weight-light {
+    font-weight: $font-weight-light;
+  }
+  .font-weight-regular {
+    font-weight: $font-weight-regular;
+  }
+  .font-weight-medium {
+    font-weight: $font-weight-medium;
+  }
+  .font-weight-bold {
+    font-weight: $font-weight-bold;
+  }
+
+  // colors classes
+  .semi-muted {
+    color: $content-text-dark;
+  }
+  .muted,
+  input[readonly] {
+    color: $muted-text-light;
+  }
+  .content-text-light {
+    color: $content-text-light;
+  }
+  .content-text-dark {
+    color: $content-text-dark;
+  }
+  .muted-text-light {
+    color: $muted-text-light;
+  }
+  .muted-text-medium {
+    color: $muted-text-medium;
+  }
+  .muted-text-dark {
+    color: $muted-text-dark;
+  }
+  .label-yellow {
+    color: $label-yellow;
+  }
+  .label-orange {
+    color: $label-orange;
+  }
+  .label-blue {
+    color: $blue;
+  }
+  .label-dark {
+    color: $label-dark;
+  }
+  .heading-green {
+    color: $heading-green;
+  }
+  .heading-blue {
+    color: $blue;
+  }
+  .offwhite-background {
+    background-color: $background-offwhite;
+  }
+  .dark-grey-background {
+    background-color: $background-darkgrey;
+  }
+  .gradient-background {
+    background: linear-gradient(
+      to right,
+      $background-gradient-from,
+      $background-gradient-to
+    );
+  }
+  // button classes
+  button {
+    border: none;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  button:focus {
+    outline: none;
+  }
+  .btn-normal {
+    padding: 10px 30px;
+    line-height: 1;
+    color: $white;
+    border-radius: 6px;
+    font-weight: $font-weight-regular;
+  }
+  .btn-less-padding {
+    padding: 5px 10px;
+  }
+  .btn-orange {
+    background-color: $btn-orange;
+    border: 1px solid $btn-orange;
+  }
+  .btn-blue {
+    background-color: $btn-blue;
+    border: 1px solid $btn-blue;
+  }
+  .btn-tag-green {
+    padding: 10px 15px;
+    background-color: $btn-green;
+    border: 2px solid $btn-green;
+  }
+  .btn-grey {
+    background-color: $btn-grey;
+    border: 1px solid $btn-grey;
+  }
+  .btn-tag-green-outline {
+    padding: 10px 15px;
+    background-color: inherit;
+    border: 2px solid $btn-green;
+  }
+  .span-btn-blue {
+    color: $btn-blue;
+    margin: 0px 10px;
+  }
+  .span-btn-blue:hover {
+    cursor: pointer;
+  }
+  .btn-blue-white {
+    padding: 2px 15px;
+    color: $btn-blue;
+    background-color: inherit;
+    border: 2px solid $btn-blue;
+    border-radius: 10px;
+  }
+  .btn-blue-white:hover {
+    color: $white;
+    background-color: $btn-blue;
+    transition-delay: 0.1s;
+  }
+  .btn-white-blue {
+    padding: 2px 15px;
+    color: $white;
+    background-color: $btn-blue;
+    border: 2px solid $btn-blue;
+    border-radius: 10px;
+  }
+  .btn-trans-white {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+  }
+  .btn-white-orange {
+    background-color: $white;
+    border: 1px solid $btn-orange;
+    color: $btn-orange;
+  }
+  .btn-rounded-sides {
+    border-radius: 50px;
+  }
+  .btn-rounded-corners {
+    border-radius: 6px;
+  }
+  .btn-sharp-corners {
+    border-radius: 0;
+  }
+  .three-dots-edit-btn {
+    background: url("../images/Desktop/Sprite-Desktop.png") no-repeat -108px -1238px;
+    width: 30px;
+    height: 7px;
+    min-width: 30px;
+    margin-left: 10px;
+  }
+  .three-dots-edit-btn:hover {
+    cursor: pointer;
+  }
+  // font-size classes start here
+  @media (min-width: $desk-min-width) {
+    .header-font-size {
+      font-size: $desktop-header-font-size;
+    }
+    .header-font-size-mid {
+      font-size: $max-desk-header-font-size;
+    }
+    .sub-header-font-size-big {
+      font-size: $desktop-sub-header-font-size-big;
+    }
+    .sub-header-font-size-mid {
+      font-size: $desktop-sub-header-font-size-mid;
+    }
+    .sub-header-font-size-small {
+      font-size: $desktop-sub-header-font-size-small;
+    }
+    .btn-label-font-size {
+      font-size: $desktop-btn-label-font-size;
+    }
+    .content-font-size-normal {
+      font-size: $desktop-content-normal-font-size;
+    }
+    .content-font-size-small {
+      font-size: $desktop-content-smaller-font-size;
+    }
+  }
+  // font-size classes end here
+  // font-size classes media query
+  @media (min-width: $tab-min-width) and (max-width: $tab-max-width) {
+    .header-font-size {
+      font-size: $tab-header-font-size;
+    }
+    .sub-header-font-size-big {
+      font-size: $tab-sub-header-font-size-big;
+    }
+    .sub-header-font-size-mid {
+      font-size: $tab-sub-header-font-size-mid;
+    }
+    .sub-header-font-size-small {
+      font-size: $tab-sub-header-font-size-small;
+    }
+    .btn-label-font-size {
+      font-size: $tab-btn-label-font-size;
+    }
+    .content-font-size-normal {
+      font-size: $tab-content-normal-font-size;
+    }
+    .content-font-size-small {
+      font-size: $tab-content-smaller-font-size;
+    }
+    .btn-normal {
+      padding: 10px 20px;
+    }
+    .three-dots-edit-btn {
+      background: url("../images/Desktop/Sprite-Desktop.png") no-repeat -108px -1238px;
+      width: 30px;
+      height: 7px;
+      min-width: 30px;
+    }
+  }
+  @media (min-width: $mob-min-width) and (max-width: $mob-max-width) {
+    .header-font-size {
+      font-size: $mob-header-font-size;
+    }
+    .sub-header-font-size-big {
+      font-size: $mob-sub-header-font-size-big;
+    }
+    .sub-header-font-size-mid {
+      font-size: $mob-sub-header-font-size-mid;
+    }
+    .sub-header-font-size-small {
+      font-size: $mob-sub-header-font-size-small;
+    }
+    .btn-label-font-size {
+      font-size: $mob-btn-label-font-size;
+    }
+    .content-font-size-normal {
+      font-size: $mob-content-normal-font-size;
+    }
+    .content-font-size-small {
+      font-size: $mob-content-smaller-font-size;
+    }
+    .btn-normal {
+      padding: 10px 15px;
+    }
+    .btn-tag-green-outline {
+      padding: 5px;
+    }
+    .btn-tag-green {
+      padding: 5px;
+    }
+    .three-dots-edit-btn {
+      background: url("../images/Mobile/Sprite-Mobile.png") no-repeat -165px -1199px;
+      width: 16px;
+      height: 4px; // min-width: 30px;
+    }
+    input {
+      padding: 5px;
+    }
+  }
+  @include build-grid();
+}

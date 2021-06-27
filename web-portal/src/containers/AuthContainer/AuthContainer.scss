@@ -1,0 +1,121 @@
+@import "../../assets/scss/master";
+
+.auth-modal {
+  display: flex;
+  align-items: stretch;
+  min-height: 90vh;
+  max-height: 90vh;
+  min-width: 30vw;
+  max-width: 30vw;
+  overflow-y: auto;
+}
+.auth-modal h2 {
+  position: absolute;
+  top: 30px;
+}
+.auth-modal input {
+  width: 100%;
+  margin: 10px 0px;
+  border-radius: 7px;
+}
+
+.auth-modal-side-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 30px;
+  background: url("../../assets/images/login.jpg");
+  background-size: cover;
+  min-height: 730px;
+  flex-grow: 1;
+  min-width: 50%;
+}
+
+@media (max-width: $tab-max-width) {
+  .auth-modal {
+    min-height: 70vh;
+    max-height: 100vh;
+    min-width: 300px;
+    max-width: 400px;
+  }
+}
+@media (max-width: $mob-max-width) {
+  .auth-modal {
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+:global {
+  @media (min-width: $desk-min-width) {
+    .auth-modal h1 {
+      font-size: $desktop-header-font-size;
+    }
+    .auth-modal h2 {
+      font-size: $desktop-sub-header-font-size-mid;
+    }
+    .auth-modal h3,
+    .auth-modal label {
+      font-size: $desktop-sub-header-font-size-small;
+    }
+    .auth-modal button {
+      font-size: $desktop-sub-header-font-size-small;
+    }
+    .auth-modal p,
+    .auth-modal span,
+    .auth-modal div {
+      font-size: $desktop-content-normal-font-size;
+    }
+    .auth-modal .content-normal-font-size {
+      font-size: $desktop-content-normal-font-size;
+    }
+  }
+  @media (min-width: $tab-min-width) and (max-width: $tab-max-width) {
+    .auth-modal h1 {
+      font-size: $tab-header-font-size;
+    }
+    .auth-modal h2 {
+      font-size: $tab-sub-header-font-size-big;
+    }
+    .auth-modal h3,
+    .auth-modal label {
+      font-size: $tab-sub-header-font-size-small;
+    }
+    .auth-modal button {
+      font-size: $tab-btn-label-font-size;
+    }
+    .auth-modal p,
+    .auth-modal span,
+    .auth-modal div {
+      font-size: $tab-content-normal-font-size;
+    }
+    .auth-modal .content-normal-font-size {
+      font-size: $tab-content-normal-font-size;
+    }
+  }
+  @media (min-width: $mob-min-width) and (max-width: $mob-max-width) {
+    .auth-modal h1 {
+      font-size: $mob-header-font-size;
+    }
+    .auth-modal h2 {
+      font-size: $mob-sub-header-font-size-big;
+    }
+    .auth-modal h3,
+    .auth-modal label {
+      font-size: $mob-sub-header-font-size-small;
+    }
+    .auth-modal button {
+      font-size: $mob-btn-label-font-size;
+    }
+    .auth-modal p,
+    .auth-modal span,
+    .auth-modal div {
+      font-size: $mob-content-normal-font-size;
+    }
+    .auth-modal .content-normal-font-size {
+      font-size: $mob-content-normal-font-size;
+    }
+  }
+}

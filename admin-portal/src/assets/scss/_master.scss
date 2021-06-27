@@ -1,0 +1,170 @@
+$ant-advanced-search-form-background: #e3e3e3;
+$ant-advanced-search-form-border: #d9d9d9;
+$search-border: #eee;
+$search-box-shadow: #ccc;
+$white: #fff;
+$shadow: #aeaeae;
+$tab-width: 992px;
+
+$header-bg: #263646;
+
+$black: #000;
+$white: #fff;
+$blue: #0088b2;
+$yellow: #fcff00;
+$heading-green: #007972;
+$btn-green: #02a850;
+$btn-orange: #ff8a00;
+$btn-blue: #0088b2;
+$btn-grey: #2a2a2a;
+$content-text-light: #707070;
+$content-text-dark: #393939;
+$muted-text-green: #008957;
+$muted-text-light: #908787;
+$muted-text-medium: #636363;
+$muted-text-dark: #222222;
+$label-yellow: #fdff4d;
+$label-orange: #ffb400;
+$label-dark: #232323;
+$dropdown-hover-grey: #ebecf0;
+$sidebar-list-grey: #545454; // SRP
+$background-offwhite: #f1f1f1;
+$background-grey: #acabac;
+$background-darkgrey: #121921; // footer
+$background-gradient-from: #810021;
+$background-gradient-to: #34006a;
+$error-red: #cc0000;
+$sidebar-nav-link-active-blue: #00789d; // hover or active
+$border-grey: #959595;
+$border-offwhite: #ebebeb;
+$shadow: #cccccc;
+
+// breakpoints
+$mob-min-width: 320px;
+$mob-max-width: 576px;
+$mob-width: 576px;
+$tab-width: 992px;
+$tab-min-width: 577px;
+$tab-max-width: 992px;
+$desk-min-width: 993px;
+$desk-max-width: 1440px;
+$min-width: 300px;
+$max-width: 1600px;
+$min-font: 32px;
+$max-font: 36px;
+$mob-mid-width: 375px;
+$laptop-mid-width: 1024px;
+
+// input height
+$min-input-height: 40px;
+$max-input-height: 50px;
+$input-height: 40px;
+
+// font weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// font-sizes
+$min-desk-header-font-size: 32px;
+$max-desk-header-font-size: 36px;
+$min-desk-sub-header-font-size: 26px;
+$max-desk-sub-header-font-size: 30px;
+
+$min-tab-header-font-size: 30px;
+$max-tab-header-font-size: 34px;
+$min-tab-sub-header-font-size: 25px;
+$max-tab-sub-header-font-size: 28px;
+
+$min-mob-header-font-size: 28px;
+$max-mob-header-font-size: 32px;
+$min-mob-sub-header-font-size: 25px;
+$max-mob-sub-header-font-size: 27px;
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// for desktop
+$desktop-header-font-size: calc(
+  #{$min-desk-header-font-size} + #{strip-unit(
+      $max-desk-header-font-size - $min-desk-header-font-size
+    )} *
+    (
+      (100vw - #{$desk-min-width}) / #{strip-unit(
+          $desk-max-width - $desk-min-width
+        )}
+    )
+); //h1
+$desktop-sub-header-font-size-big: calc(
+  #{$min-desk-sub-header-font-size} + #{strip-unit(
+      $max-desk-sub-header-font-size - $min-desk-sub-header-font-size
+    )} *
+    (
+      (100vw - #{$desk-min-width}) / #{strip-unit(
+          $desk-max-width - $desk-min-width
+        )}
+    )
+); //h2
+$desktop-sub-header-font-size-mid: 24px; //h3
+$desktop-sub-header-font-size-small: 20px; //h4
+$desktop-btn-label-font-size: 18px; // button, label
+$desktop-content-normal-font-size: 16px; // p, span, div etc.
+$desktop-content-smaller-font-size: 14px; // p, span, div etc.
+
+// for tab
+$tab-header-font-size: calc(
+  #{$min-tab-header-font-size} + #{strip-unit(
+      $max-tab-header-font-size - $min-tab-header-font-size
+    )} *
+    (
+      (100vw - #{$tab-min-width}) / #{strip-unit(
+          $tab-max-width - $tab-min-width
+        )}
+    )
+); //h1
+$tab-sub-header-font-size-big: calc(
+  #{$min-tab-sub-header-font-size} + #{strip-unit(
+      $max-tab-sub-header-font-size - $min-tab-sub-header-font-size
+    )} *
+    (
+      (100vw - #{$tab-min-width}) / #{strip-unit(
+          $tab-max-width - $tab-min-width
+        )}
+    )
+); //h2
+$tab-sub-header-font-size-mid: 22px; //h3
+$tab-sub-header-font-size-small: 19px; //h4
+$tab-btn-label-font-size: 17px; // button, label
+$tab-content-normal-font-size: 16px; // p, span, div etc.
+$tab-content-smaller-font-size: 14px; // p, span, div etc.
+
+// for mobile
+$mob-header-font-size: calc(
+  #{$min-mob-header-font-size} + #{strip-unit(
+      $max-mob-header-font-size - $min-mob-header-font-size
+    )} *
+    (
+      (100vw - #{$mob-min-width}) / #{strip-unit(
+          $mob-max-width - $mob-min-width
+        )}
+    )
+); //h1
+$mob-sub-header-font-size-big: calc(
+  #{$min-mob-sub-header-font-size} + #{strip-unit(
+      $max-mob-sub-header-font-size - $min-mob-sub-header-font-size
+    )} *
+    (
+      (100vw - #{$mob-min-width}) / #{strip-unit(
+          $mob-max-width - $mob-min-width
+        )}
+    )
+); //h2
+$mob-sub-header-font-size-mid: 20px; //h3
+$mob-sub-header-font-size-small: 18px; //h4
+$mob-btn-label-font-size: 16px; // button, label
+$mob-content-normal-font-size: 15px; // p, span, div etc.
+$mob-content-smaller-font-size: 14px; // p, span, div etc.
+
+$col-gutter-size: 15px;

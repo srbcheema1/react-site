@@ -1,0 +1,48 @@
+.c-cques {
+	padding: 15px;
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap:nowrap;
+
+	height: 100%;
+}
+
+.c-cques__header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-bottom: 20px;
+}
+
+.c-cques__tabs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: #8C8C8C;
+}
+
+.tabline {
+	padding: 5px;
+}
+
+.tab-btn {
+	cursor: pointer;
+}
+
+.tab-btn[active="true"] {
+	color: #000;
+	:global {
+		i {
+			color: blue;
+		}
+	}
+}
+
+.tabdiv {
+	width: 100%;
+}

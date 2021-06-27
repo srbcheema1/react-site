@@ -1,0 +1,52 @@
+$table-content-font-size: 1.0rem;
+$table-header-font-size: 1.1rem;
+
+.c-problem-list {
+	padding: 0px;
+	:global {
+		thead th.pt_title, thead th.pt_points, thead th.pt_type, thead th.pt_status {
+			font-size: $table-header-font-size;
+			width:15%;
+		}
+		thead th.pt_title {
+			width:40%;
+			padding-left: 40px;
+		}
+		tbody td.pt_action {
+			text-align:right;
+		}
+		tbody td.pt_title, tbody td.pt_points, tbody td.pt_type, tbody td.pt_status {
+			font-size: $table-content-font-size;
+		}
+
+		tr th, tr td {
+			border-bottom: 1px solid #707070;
+			vertical-align: middle;
+		}
+
+		tbody td.pt_title {
+			padding-left: 40px;
+		}
+		tbody td.pt_action {
+			padding-right: 40px;
+		}
+
+		tbody td.pt_action span.reattempt {
+			color: #0077CC;
+			cursor: pointer;
+			font-size: $table-content-font-size;
+		}
+		tbody td.pt_status .unattempted {
+			width:30px;
+			height:30px;
+			border-radius:30px;
+			border: 2px solid #707070;
+			display:inline-block;
+		}
+
+		tbody td.pt_status {
+			line-height: 10px;
+			vertical-align: middle;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.c-layout {
+	height: 100vh;
+}
+
+.c-header {
+	height: 12%;
+}
+
+.c-content {
+	height: 78%;
+	overflow:auto;
+}
+
+.c-content[full="true"] {
+	height: 100%;
+	overflow:auto;
+}
+
+.c-footer {
+	height: 10%;
+}

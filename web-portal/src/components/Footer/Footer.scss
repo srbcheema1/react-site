@@ -1,0 +1,85 @@
+@import "../../assets/scss/master";
+@import "../../assets/scss/layout.scss";
+
+.c-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+
+	background-color: $header-bg;
+	color: #fff;
+}
+
+
+.c-footer__terms {
+	font-size: 12px;
+	padding-left: 5%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+@media (max-width: $mob-max-width) {
+	.c-contactDetails {
+		padding-bottom: 15px;
+		font-size: 11px;
+	}
+	.c-footer__terms{
+		font-size: 10px;
+	}
+}
+
+@media (max-width: $tab-width) {
+	.c-followLinks__facebook {
+		background: url("../../assets/images/Tablet/Sprite-Tab.png") no-repeat -309px -89px;
+		width: 29px;
+		height: 29px;
+	}
+
+	.c-followLinks__twitter {
+		background: url("../../assets/images/Tablet/Sprite-Tab.png") no-repeat -354px -89px;
+		width: 29px;
+		height: 29px;
+	}
+
+	.c-followLinks__pinterest {
+		background: url("../../assets/images/Tablet/Sprite-Tab.png") no-repeat -400px -89px;
+		width: 29px;
+		height: 29px;
+	}
+
+	.c-contactDetails__email {
+		font-size: 15px;
+	}
+	.c-contactDetails__icon {
+		background: url("../../assets/images/Sprite-mobile.png") no-repeat -431px -45px;
+		display: inline-block;
+		height: 7px;
+		width: 10px;
+	}
+
+	.c-footer__line {
+		border: 0.2px solid #ccc;
+		margin: 15px;
+	}
+	.c-footer {
+		padding: 10px 30px;
+	}
+
+	.c-subscribe__btn {
+		padding: 7px 5px;
+	}
+
+	.c-subscribe__input {
+		min-width: 150px;
+		width: 150px;
+	}
+}
+@media (max-width: 410px) {
+	.c-footer__line{
+		border: 0.4px solid #ccc;
+		margin: 15px;
+	}
+}

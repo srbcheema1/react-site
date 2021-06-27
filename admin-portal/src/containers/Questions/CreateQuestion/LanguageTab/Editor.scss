@@ -1,0 +1,26 @@
+.editor {
+	margin-bottom: 20px;
+	border: 1px solid #d9d9d9;
+}
+.editor__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 10px;
+	background-color: rgba(0,0,0,0.08);
+}
+
+:global {
+	.readonly-highlight{
+		position: absolute;
+	}
+	
+	.ace_content {
+		background-color: rgba(0,0,0,0.02);
+	}
+}
+
+.copy-to-clipboard {
+	margin: 0px 10px;
+	cursor: pointer;
+}

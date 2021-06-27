@@ -1,0 +1,28 @@
+@import '../../assets/scss/_master';
+
+.EditorHeader {
+	height:10%;
+	padding:8px;
+	display:flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.headerLeft {
+	flex: 0 0 auto;
+	padding: 0 10px;
+}
+
+.headerRight {
+	display: flex;
+	flex: 0 0 120px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.toggleExpandButton {
+	font-size: 125%;
+	cursor:pointer;
+}

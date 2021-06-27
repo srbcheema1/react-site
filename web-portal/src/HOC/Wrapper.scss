@@ -1,0 +1,16 @@
+@import "../assets/scss/master";
+
+.l-wrapper {
+    background-color: $header-bg;
+    min-height: 100vh;
+    padding: 45px 0px;
+}
+
+.c-container {
+    background-color: $white;
+    max-width: 970px;
+    min-height: 500px;
+    margin-left:auto;
+    margin-right:auto;
+
+}

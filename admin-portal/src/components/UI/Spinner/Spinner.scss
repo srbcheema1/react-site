@@ -1,0 +1,12 @@
+.spinner {
+  border-radius: 4px;
+  left: 50%;
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+}

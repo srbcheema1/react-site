@@ -1,0 +1,99 @@
+
+@import '../../assets/scss/master';
+
+.ant-advanced-search-form {
+  background: $white;
+  border-radius: 6px;
+  padding: 24px;
+
+  .ant-form-item {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .ant-form-item-control-wrapper {
+    flex: 1;
+}
+
+}
+
+
+.search-title {
+  margin-bottom: 2%;
+}
+
+.main-div {
+  background: $ant-advanced-search-form-background;
+  padding: 1%;
+}
+
+.search-box-div {
+  margin-bottom: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+
+.display-box-div {
+  border: 1px solid $search-border;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+.create-button {
+  margin-left: 92%;
+  position: relative;
+}
+
+.search {
+
+  border: 1px solid $search-border;
+  box-shadow: 0 2px 3px $search-box-shadow;
+  margin: 20px auto;
+  text-align: center;
+  width: 90%;
+}
+
+.search-table {
+  background: $white;
+  margin: 50px;
+  td:first-child {
+    width: 40%;
+    }
+
+  td:nth-child(2) {
+    width: 40%;
+  }
+}
+
+.search-btn {
+  width: 100%;
+
+}
+.reset-btn {
+  width: 100%;
+
+}
+.name-div {
+  cursor: pointer;
+}
+
+:global {
+  .column-heading {
+    span {
+      font-weight: bold;
+      }
+  }
+}
+.main-form-div {
+  background: $white;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: .5%;
+  padding-top: .5%;
+}
+

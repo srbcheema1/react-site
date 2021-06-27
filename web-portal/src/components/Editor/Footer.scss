@@ -1,0 +1,12 @@
+@import '../../assets/scss/_master';
+
+.c-footer {
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.c-footer button {
+	margin-right: 20px;
+}

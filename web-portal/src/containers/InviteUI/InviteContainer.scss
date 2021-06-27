@@ -1,0 +1,72 @@
+@import "../../assets/scss/master";
+
+.l-invite-wrapper {
+	background-color: $header-bg;
+	min-height: 100vh;
+	padding: 45px 0px;
+}
+
+.c-invite {
+	background-color: $white;
+	max-width: 970px;
+	min-height: 500px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+.c-invite__logo {
+	background-color: $header-bg;
+	width: 450px;
+	margin: 0 auto;
+	margin-top:40px;
+	padding: 30px 0px;
+}
+.c-invite__logo img {
+	width: 340px;
+}
+
+.c-invite__test-details {
+	margin-bottom: 40px;
+	color: $content-text-light;
+}
+.c-invite__test-details h1 {
+	padding:20px 0px 10px 0px;
+}
+
+.c-invite__test-instructions {
+	padding: 0 170px 0 180px;
+}
+.c-invite__test-instructions h3 {
+	margin-bottom:40px;
+	font-size: 1.3rem;
+	color: $content-text-light;
+}
+.c-invite__test-instructions ul {
+	list-style: decimal;
+	text-align: left;
+}
+.c-invite__test-instructions ul li {
+	margin-bottom: 20px;
+	line-height: 1.25;
+	font-size: 1.1rem;
+}
+.c-invite__test-instructions p {
+	margin-bottom: 20px;
+	line-height: 1.25;
+	font-size: 1.1rem;
+	padding: 0px 10px;
+}
+.c-invite__test-instructions hr{
+	border: none;
+	height: 2px;
+	background-color: $content-text-light;
+}
+
+.c-invite__test-cta {
+	padding: 20px 0px;
+}
+
+.c-invite__error-msg {
+	padding: 30px 200px;
+}

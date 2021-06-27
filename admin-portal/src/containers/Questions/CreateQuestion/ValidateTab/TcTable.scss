@@ -1,0 +1,46 @@
+.verdict-table {
+	background:none;
+	:global{
+		.verdict-index {
+			text-align: center;
+		}
+		.verdict-points {
+			text-align: center;
+		}
+		.fa {
+			width: 15px;
+		}
+		.ant-table-footer {
+			padding: 10px;
+		}
+	}
+}
+
+.verdict-table thead > tr > th {
+	padding: 5px 0px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+.verdict-table tbody > tr > td {
+	padding: 5px 0px;
+	padding-right: 10px;
+	// border-style:none;
+	text-align: left;
+}
+
+.grn {
+	color:green;
+}
+
+.dangr {
+	color:red;
+}
+
+.orng {
+	color:orange;
+}
+
+.dfault {
+	color: gray;
+}

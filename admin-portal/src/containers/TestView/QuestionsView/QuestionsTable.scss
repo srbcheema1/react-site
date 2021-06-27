@@ -1,0 +1,51 @@
+.c-question {
+	background: #fff;
+	color: #707070;
+	:global {
+		.ant-table {
+			color:#707070;
+		}
+		.ant-table-thead > tr > th {
+			background: #fff;
+			font-weight: 800;
+		}
+		.l-question__actions a {
+			color: #707070;
+		}
+		.l-question__title h3 {
+			color: #707070;
+		}
+	}
+}
+.c-question__delete-question {
+	cursor: pointer;
+}
+
+.c-questiontableheader {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 800;
+}
+
+.c-questiontableheader__title {
+	flex: 1 0 auto;
+	padding: 10px;
+	margin-left: 6px;
+	cursor: pointer;
+}
+
+.c-questiontableheader__add {
+	padding: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+	cursor: pointer;
+	color:#1890FF;
+}
+
+.c-questiontableheader__setting {
+	padding: 10px;
+	margin-right: 20px;
+	cursor: pointer;
+	color: #1890FF;
+}

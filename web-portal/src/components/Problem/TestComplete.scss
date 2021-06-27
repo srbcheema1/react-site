@@ -1,0 +1,37 @@
+@import '../../assets/scss/_master';
+
+.c-msg-box {
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	height: 500px
+}
+
+.c-msg-box h2 {
+	color: $content-text-light;
+	padding: 30px 0px;
+}
+
+.c-msg-box {
+	line-height:1.5;
+}
+
+.c-msg-box__top-image {
+
+}
+
+.c-msg-box__bottom-image {
+	display: flex;
+	justify-content: space-between;
+	align-self: stretch;
+	align-items: center;
+}
+
+.c-msg-box__bottom-image-left {
+	margin-left: 50px;
+}
+
+.c-msg-box__bottom-image-right {
+	margin-right:30px;
+}

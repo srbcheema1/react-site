@@ -1,0 +1,90 @@
+.form {
+	.difficulty-select {
+		width: 120px;
+	}
+	.points-input {
+		width: 80px;
+	}
+	.visibility-select {
+		width: 120px;
+	}
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	font-size: 24px;
+	padding-top: 22px;
+	color: rgba(0,0,0,0.5);
+
+	:global {
+		i {
+			margin-left: 12px;
+			cursor: pointer;
+		}
+		.ant-menu {
+			border-bottom: 0px;
+		}
+		.ant-menu-horizontal {
+			line-height: 22px;
+			.ant-menu-submenu {
+				margin-top: 0px;
+				border-bottom: 0px;
+				top: 0px;
+			}
+			.ant-menu-submenu-selected {
+				color: rgba(0,0,0,0.5)
+			}
+		}
+		.ant-menu-submenu-title {
+			padding: 0px;
+			height: 24px;
+			.anticon {
+				margin-right: 0px;
+				font-size: 24px;
+			}
+			.ant-menu-submenu-arrow {
+				display: none;
+			}
+		}
+		.ant-menu-submenu-active {
+
+		}
+	}
+}
+
+.c-form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	border-bottom: 1px solid #d9d9d9;
+	padding: 15px 0px 10px 0px;
+
+	:global {
+		.ant-form-inline .ant-form-item > .ant-form-item-label {
+			display: block;
+			line-height: 22px;
+		}
+		.ant-form-item-label {
+			text-align: left;
+		}
+	}
+}
+
+:global {
+	.ant-menu .ant-menu-item-group .ant-menu-item-group-list .ant-menu-item-selected {
+		color: rgba(0,0,0,0.5);
+		background-color: #fff;
+	}
+	.ant-menu .ant-menu-item-group .ant-menu-item-group-list .ant-menu-item {
+		color: rgba(0,0,0,0.5);
+		background-color: #fff;
+	}
+	.ant-menu .ant-menu-item-group .ant-menu-item-group-list .ant-menu-item-active:hover {
+		color: #1890ff;
+		background-color: #e6f7ff;
+	}
+}

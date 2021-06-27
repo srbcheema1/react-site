@@ -1,0 +1,37 @@
+@import '../../assets/scss/_master';
+
+.l-problem-container {
+	padding: 20px 0px;
+	height: 100%;
+	.l-problem-container__row {
+		height: 100%;
+	}
+}
+
+.c-problem-def-results {
+	height: 100%;
+	border: 1px solid black;
+	:global {
+		.ant-tabs {
+			height: 100%;
+		}
+		.ant-tabs-bar {
+			margin-bottom:0;
+			height: 10%;
+		}
+		.ant-tabs-content {
+			height: 90%;
+			// overflow-y: auto; // causing issue, implement inside
+		}
+	}
+}
+
+.c-editor {
+	height: 100%;
+	border:1px solid black;
+	flex-direction: column;
+}
+
+.c-editor__ace {
+	height: 80%;
+}

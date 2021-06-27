@@ -1,0 +1,129 @@
+@import "../../../assets/scss/master";
+
+.signup-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background: url("../../../assets/images/signup.jpg");
+  background-size: cover;
+  padding: 70px 30px;
+  justify-content: center;
+  align-items: center;
+  // min-height: 730px;
+  input {
+    border: 1px solid grey;
+  }
+  span,
+  label {
+    cursor: pointer;
+  }
+}
+.age-gender-group {
+  display: flex;
+  width: 100%;
+}
+.age-gender-group__age {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.age-gender-group__age input {
+  min-width: 40px;
+}
+.gender-group {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0px;
+  label {
+    text-align: left;
+  }
+}
+.gender-group__radio-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.gender-group__radio-btns div {
+  display: flex;
+  align-items: center;
+}
+.gender-group .gender-group__radio-btns input {
+  margin: 0 5px 0 0;
+  padding: 0;
+  min-width: 15px;
+  max-width: 15px;
+}
+.terms-group {
+  align-items: center;
+  display: flex;
+  margin: 10px 0;
+}
+.signup-container .terms-group input {
+  width: 15px;
+  margin: 0 5px 0 0;
+}
+.signup-container__signup-header {
+  color: #0088b2;
+}
+
+.select-state {
+}
+
+.suggetion-container {
+}
+
+.autosuggest {
+  background-color: #ffffff;
+  box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 371px;
+  width: 42%;
+
+  ul {
+    background-color: #ffffff;
+    position: absolute;
+    top: 371px;
+    width: 42%;
+  }
+}
+
+.locations {
+  cursor: pointer;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+
+  /* span {
+    text-transform: lowercase;
+  }
+
+  span:first-letter {text-transform: uppercase;} */
+}
+
+.city {
+  //text-transform: lowercase;
+}
+
+.city:first-letter {
+  //text-transform: uppercase;
+}
+
+.error-message {
+  color: red;
+}
+
+.sign-up-form {
+}
+
+.error {
+  color: red;
+  display: flex;
+  font-size: 0.6rem !important;
+}
+
+@media (min-width: $tab-width) {
+  .signup-container {
+    max-width: 100%;
+  }
+}

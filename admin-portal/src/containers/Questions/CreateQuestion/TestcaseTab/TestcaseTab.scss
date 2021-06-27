@@ -1,0 +1,39 @@
+.tctab {
+	width: 100%;
+	padding: 20px;
+
+	.dropbox {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		.dropbox__left {
+			width: 40%;
+		}
+		.dropbox__right {
+			width: 40%;
+		}
+	}
+
+	.title {
+		font-weight: 800;
+		padding: 20px 0px 10px 0px;
+	}
+
+	.testcases {
+
+	}
+
+	.buttons {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		padding-top: 20px;
+		.form__button {
+			margin-left: 10px;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+@import '../../assets/scss/_master';
+
+.container{
+	padding-top:100px;
+}
+
+.container__image {
+	width: 500px;
+}
+
+.container__message{
+	font-size:$desktop-sub-header-font-size-mid;
+	padding-top: 12px;
+	padding-bottom:10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.container__message--blue{
+	color:#5E728E;
+}
+
+@media (max-width: $mob-width) {
+	.container__image{
+		width:350px;
+	}
+}

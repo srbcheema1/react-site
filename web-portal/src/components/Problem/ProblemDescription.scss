@@ -1,0 +1,24 @@
+@import '../../assets/scss/_master';
+
+.desc-style {
+	font-weight:bold;
+	margin-top:20px;
+	text-align:left;
+	padding:1px;
+}
+
+.titleStyle {
+	font-weight: bold;
+	text-align: left;
+}
+
+.contentstyle {
+	text-align:left;
+	padding:1px;
+}
+
+.c-problem-description {
+	padding: 10px 15px;
+	height: 100%;
+	overflow-y: auto;
+}

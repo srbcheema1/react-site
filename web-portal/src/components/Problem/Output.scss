@@ -1,0 +1,55 @@
+@import '../../assets/scss/_master';
+
+.results-tab {
+	text-align:left;
+	padding: 10px 15px;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.results-tab h3 {
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.95);
+	padding: 10px 0px;
+}
+
+.results-tab p {
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.verdict-table {
+	background:none;
+	width:inherit;
+}
+
+.verdict-table thead > tr > th {
+	padding: 5px 0px;
+	padding-right: 10px;
+	text-align: center;
+	border-style: none;
+	background: none;
+}
+
+.verdict-table tbody > tr > td {
+	padding: 5px 0px;
+	padding-right: 10px;
+	border-style:none;
+	text-align: center;
+}
+
+.grn {
+	color:green;
+}
+
+.dangr {
+	color:red;
+}
+
+.orng {
+	color:orange;
+}
+
+.dfault {
+	color: gray;
+}
